@@ -1,0 +1,37 @@
+.fixed-social-icons{
+    position: fixed;
+    top: 35%;
+    z-index: 99999;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.04);
+   }
+   
+   .fixed-social-icons li{
+     margin-bottom: 1px; 
+     background-color: #f2f8ff;
+     padding: 1.5px;
+     border-bottom: 1px solid blue;
+   }
+   
+   .fixed-social-icons li:nth-child(5) {border-bottom: none;}
+   
+   .social-iconss img,
+   .fixed-social-icons img{
+     height: 26px;
+     width: 27px;
+   }
+   @media(max-width: 1200px) {  .fixed-social-icons{
+    top: 30%;
+    right: 0;
+  }
+  
+  .fixed-social-icons li{
+    margin-bottom: 0.4px; 
+    padding: 1px;
+  }
+  
+  
+  .social-iconss img,
+  .fixed-social-icons img{
+    height: 20px;
+    width: 21px;
+  }}

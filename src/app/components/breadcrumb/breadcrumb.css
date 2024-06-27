@@ -1,0 +1,81 @@
+.page-title-area {
+  background: #a9c7ec;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px; 
+}
+a{
+  text-decoration: none;
+}
+@media (max-width: 575px) {
+  .page-title-area {
+    padding-top: 180px;
+  }
+}
+
+.page-title-area::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../../public/assets/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.page-title-area .title {
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+        @media (max-width: 991px) {
+          .page-title-area {
+            padding: 15px 0;
+          }
+          .page-title-area .title {
+            font-size: 62px;
+          }
+        }
+
+        @media (max-width: 575px) {
+          .page-title-area .title {
+            font-size: 38px;
+          }
+        }
+
+.page-title-area .breadcrumb-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.page-title-area .breadcrumb-nav li {
+  font-size:19px;
+  font-weight: 700;
+  position: relative;
+}
+
+@media (max-width: 575px) {
+  .page-title-area .breadcrumb-nav li {
+    font-size: 18px;
+  }
+}
+
+.page-title-area .breadcrumb-nav li:first-child:after {
+  content: "|";
+  margin: 0 8px;
+}
+
+.page-title-area .breadcrumb-nav li,
+.page-title-area .breadcrumb-nav li a {
+  color: #69a1bb;
+}

@@ -1,0 +1,139 @@
+.why-choose-area {
+    background-color: #101028;
+    padding-top: 113px;
+    padding-bottom: 113px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+  }
+  
+  .why-choose-area .single-choose .icon-box {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    border: 2px solid #252543;
+    background: -webkit-radial-gradient(circle, #8383f9 0%, rgba(209, 209, 223, 0) 50%, rgba(255, 255, 255, 0) 74%);
+    background: -o-radial-gradient(circle, #8383f9 0%, rgba(209, 209, 223, 0) 50%, rgba(255, 255, 255, 0) 74%);
+    background: radial-gradient(circle, #8383f9 0%, rgba(209, 209, 223, 0) 50%, rgba(255, 255, 255, 0) 74%);
+    position: relative;
+    z-index: 2;
+    font-size: 60px;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 50px;
+  }
+  
+  .why-choose-area .single-choose .icon-box .rotate-dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    -webkit-animation: rotateTwo 30s linear infinite;
+    -moz-animation: rotateTwo 30s linear infinite;
+    -o-animation: rotateTwo 30s linear infinite;
+    animation: rotateTwo 30s linear infinite;
+  }
+  
+  .why-choose-area .single-choose .icon-box .rotate-dot::before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    top: -8px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-radius: 50%;
+  }
+  
+  .why-choose-area .single-choose .icon-box .rotate-dot::after {
+    position: absolute;
+    content: "";
+    height: 7px;
+    width: 7px;
+    background: #fff;
+    bottom: -4px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-radius: 50%;
+  }
+  
+  .why-choose-area .single-choose h4 {
+    font-size: 26px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .why-choose-area .single-choose p {
+    color: #c7c7ff;
+    padding: 0 20px;
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .why-choose-area .single-choose p {
+      padding: 0;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .why-choose-area .single-choose p {
+      padding: 0;
+    }
+  }
+  
+  .why-choose-area .choose-dot {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+  
+  .why-choose-area .choose-dot img {
+    width: 100%;
+  }
+  
+  .why-choose-area .choose-shape {
+    position: absolute;
+    left: 0;
+    top: -170px;
+    z-index: -1;
+  }
+  
+  .why-choose-area .choose-shape img {
+    width: 100%;
+  }
+  .why-choose-area .single-choose .icon-box .rotate-dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    animation: rotateAnticlockwise 30s linear infinite; 
+}
+
+@keyframes rotateAnticlockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg); 
+    }
+}

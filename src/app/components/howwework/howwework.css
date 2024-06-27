@@ -1,0 +1,50 @@
+
+.section-title {
+    /* Add styles for section title */
+    margin-bottom: 30px;
+}
+
+.myTitle {
+    /* Add styles for my title */
+    margin-top: 10px;
+}
+
+.dgrid_4 {
+    /* Add styles for dgrid_4 */
+    display: flex;
+    padding: 70px;
+}
+
+.hoWEWorkCard {
+    /* Add styles for how we work card */
+    margin-top: 30px;
+}
+
+.icon {
+    /* Add styles for icon */
+}
+
+.title {
+    /* Add styles for title */
+    font-weight: bold;
+}
+.icon img {
+    margin-bottom: 20px;
+    width: 50px;
+    height: 50px;}
+/* Additional CSS styles can be added as needed */
+.hoWEWork .hoWEWorkCard{
+    height: 150px;
+    box-shadow: none;
+    padding: 10px;
+  }
+  
+  .hoWEWork .hoWEWorkCard:hover{background-color: ;}
+  
+  .hoWEWork .hoWEWorkCard .icon{
+    font-size: 43px;
+    padding-bottom:15px;
+    color: #005ec9;
+  }
+  
+  .hoWEWork .service-item-three .title{padding: 0;}

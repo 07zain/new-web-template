@@ -1,0 +1,33 @@
+.service-item-five {
+    height: 100px;
+    padding: 40px;
+    margin-top: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .service-item-five{
+    background-color: #fff;
+  }
+  .service-item-five:hover {
+    background-color: #0c59db;
+  }
+  
+  .service-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #002249;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .service-item-five:hover .service-link {
+    color: #fff; /* White text on hover */
+  }
+  
+  .service-link:hover .arrow-icon {
+    color: #00bfff;
+  }
+  

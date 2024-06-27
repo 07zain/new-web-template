@@ -1,0 +1,17 @@
+.dgrid{
+    display:grid;
+    grid-template-columns: repeat( 3, minmax(0, 1fr) );
+    margin-top: 30px;
+  }
+  
+  .dgrid2{
+    grid-template-columns: repeat( 2, minmax(0, 1fr) );
+  }
+  
+  @media (max-width: 624px){
+    .dgrid_4{
+      display:grid;
+      grid-template-columns: repeat( 2, minmax(0, 1fr) );
+    }
+  }
+  

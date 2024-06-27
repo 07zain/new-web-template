@@ -1,0 +1,55 @@
+.faq-section {
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    margin-top: 10px;
+  }
+  
+  .faq-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../../public/assets/faq-bg.jpg');
+    background-size: cover;
+    z-index: -1;
+  }
+ .bg-cover{ background-size: cover;}
+ .accordion-four .card .card-header a i {
+    color: #0c59db;
+    padding-right: 20px;}
+  .card {
+    padding: 22px 60px 22px 40px;
+    border-radius: 40px !important;
+    background-color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  .card-header {
+    background-color: #fff;
+    border-bottom: 0;
+  }
+  
+  .card-header button {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #436584;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  .card-body {
+    background-color: #fff;
+    padding: 20px;
+    border-top: none;
+    color: #555;
+  }
+  

@@ -1,0 +1,54 @@
+.animate{
+    position: relative;
+    background: var(--mainColor);
+    width: 10px;
+    height: 10px;
+    border-radius: 1px;
+    animation: ani1 10s linear  infinite alternate-reverse none;
+    z-index: 9;
+  }
+  
+  .animate1{ left: 150px; }
+  .animate2{ 
+    left: 50px;
+    top: 50px
+  }
+  .animate3{animation: ani3 10s linear  infinite alternate-reverse none;}
+  
+  .animate4{ left: 100%; }
+  .animate5{ 
+    left: 55%; 
+    top: 30px
+  }
+  .animate6{ 
+    left: 1%; 
+    top: 10px;
+    z-index: 999999;
+  }
+  
+  .animate7{ left: 90%; }
+  
+  @keyframes ani1 {
+    0% { transform: rotate(0);transform-origin: bottom ;}
+    100% { transform: rotate(360deg);transform-origin: bottom ;}
+  }
+  
+  
+  @keyframes ani3 {
+    0% { transform: rotate(0);transform-origin: bottom ;}
+    100% { transform: rotate(-360deg);transform-origin: bottom ;}
+  }
+  
+  .animateMob{display:none}
+  
+  .faq-section #animate3,
+  .blogPage    #animate3,
+  .contact-map-section .form-area #animate3{ left: 960px;}
+  
+  .faq-section #animate5{ left: 800px;}
+  
+  .faq-section #animate7{ left: 1000px;}
+  
+  
+  
+  
