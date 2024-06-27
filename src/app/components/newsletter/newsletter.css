@@ -1,0 +1,62 @@
+.bannNoBox{
+    padding: 4rem 3rem; 
+    background:  #0c59db;
+    background: linear-gradient(10deg, #fff 17%,  #0c59db , #0a3d88de 90%,  #0c59db 79%, #fff 1%);
+  }
+  
+  .bannNoBox .dflex{display: flex; justify-content: space-between;}
+  
+  .bannNoBox .fa-phone{
+    font-size: 3rem;
+    color:green;
+    padding-right: 1rem;
+    position: relative;
+    top:0.9rem
+  }
+  
+  .bannNoBox h5{
+    font-weight: 900;
+    font-size: 1.4rem;
+  }
+  
+  .bannNoBox h1 a{ color: #f4f4f4; }
+  
+   .mypara{  
+    font-size:18px;
+    line-height: 100%;
+    padding-top: 2rem;
+  }
+  
+  .whyChooseUs{padding-bottom: 0;}
+  
+                      @media (max-width: 876px){
+   
+                      .bannNoBox{
+                        padding: 2rem 1rem 4rem 1rem; 
+                        background:  #0c59db;
+                        background: linear-gradient(10deg, #fff 17%,  #0c59db , #0a3d88de 90%,  #0c59db 79%, #fff 1%);
+                      }
+  
+                      .bannNoBox .dflex{display: block;}
+  
+                      .bannNoBox .fa-phone{
+                        font-size: 2.6rem;
+                        padding-right: 0;
+                        top:-1rem;
+                        display: block;
+                      }
+  
+                      .bannNoBox h5{
+                        font-weight: 900;
+                        font-size: 1.5rem;
+                      }
+  
+                      .bannNoBox h1 a{
+                        color: #f4f4f4;
+                        display: block;
+                        text-align: right;
+                      }
+                    }
+  
+  
+  

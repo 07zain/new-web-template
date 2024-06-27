@@ -1,33 +1,430 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+section.our-partner-section.ptb-100.gray-light-bg {
+  padding-bottom: 50px;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden;
+  font-size: 15px;
+  line-height: 1.8;
+  font-family: "Karla", sans-serif;
+  color: #616161;
+  overflow-x: hidden;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
+
+img {
+  max-width: 100%;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.slick-initialized .slick-slide:focus,
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  text-decoration: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+::-webkit-scrollbar {
+  background-color: #ccc;
+  width: 8px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #002249;
+}
+
+.slick-slide img {
+  display: inline-block;
+}
+
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+i,
+span,
+a {
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin: 0px;
+  color: #002249;
+  font-family: "GilroyBold";
+}
+
+ul,
+ol {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+p {
+  margin: 0px;
+}
+
+p.text-color-2 {
+  color: #81a3bb;
+}
+
+p.text-color-3 {
+  color: #69a1bb;
+}
+
+p.fs-16 {
+  font-size: 16px;
+}
+
+a {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  color: #0c59db;
+  text-decoration: none;
+}
+.typeservice{
+  padding: 55px;
+  margin: 50px 0;
+}
+.main-btn {
+  width: fit-content;
+  padding: 22px 45px;
+  background-color: #0c59db;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+  border: none;
+}
+
+.main-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  background-color: #002249;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.main-btn:hover {
+  color: #fff;
+}
+
+.main-btn:hover::before {
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.main-btn i {
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+}
+
+.main-btn.main-btn-2 {
+  background-color: #b7c3d6;
+}
+
+.main-btn.main-btn-3 {
+  background-color: #fff;
+  color: #0c59db;
+}
+
+.main-btn.main-btn-3:hover {
+  color: #fff;
+}
+
+.main-btn.small-size {
+  padding: 22px 40px;
+  font-size: 15px;
+}
+
+.main-btn.icon-right i {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+.main-btn.rounded-btn,
+.main-btn.rounded-btn::before {
+  border-radius: 5px;
+}
+
+.main-btn.transparent-border-btn {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.main-btn.transparent-border-btn::before {
+  background-color: #0c59db;
+}
+
+.main-btn.transparent-border-btn:hover {
+  border-color: #0c59db;
+}
+
+.navbar-btn .fa-long-arrow-right,
+.main-btn .fa-long-arrow-right{display: inline-block;}.packages .dgrid{gap: 20px;}
+
+.packages ul{
+    border: 1px solid #ddddddcd;
+    border-radius: 10px;
+    border-top: 0;
+    border-top-right-radius: 40px;
+}
+
+.packages ul li{
+    padding: 15px 10px;
+    border-top: 0.5px solid #ddddddcd;
+    margin:0 10px;
+}
+
+.packages  .li_1 {
+    display: block;
+    text-align: center;
+}
+
+.packages  .li_1 p{
+    line-height: 1.1;
+    font-size: 18px;
+}
+
+.dflex{ display: flex; }
+
+.packages ul .dflex{
+    padding: 0px 15px;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.packages ul li .li_p{
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
+}
+
+.packages ul  .icons i{
+   padding: 4px 6px;
+   border-radius: 50%;
+}
+
+.packages ul  .icons .fa-check{ padding: 4px 5px; }
+
+.packages ul  .brrr{ padding: 0; }
+
+.packages .tit{
+    padding: 30px;
+    background: linear-gradient(35deg, #fff 16%,  #0c58dbc8 , #0a3d88de 90%,  #0c59db 77%, #fff 10%); 
+    color: #fff;   
+}
+
+
+.packages ul .btnBox{
+    display: flex;
+    justify-content: center;
+}
+
+.packages ul li .startBtn{
+    height: 50px;
+    line-height: 5%;
+}
+
+.seo_service .card{  width: 50% ;}
+.seo_service .seo_serv1{
+    width: 60%; 
+    padding-right: 30px;
+}
+
+.seo_service .seo_serv2{
+    width: 50%; 
+    position: relative;
+    top: 30px;
+}
+
+.seo_service .serv_item{margin-bottom: 40px;}
+.seo_service .serv_item h4,
+.seo_service .serv_item h5{padding-bottom: 10px;}
+
+
+        @media (max-width:1200px) {
+            .seoPage{padding-top: 65px;}
+            .packages .dgrid{
+                gap: 0px; 
+                display: block;
+            }
+            
+            .packages ul{
+                margin-bottom: 10px;
+            }
+            .packages ul li{
+                padding: 8px 5px;
+            }
+
+            .packages  .li_1 h4{
+                font-size: 18px;   
+            }
+
+            .packages  .li_1 p{
+                line-height: 1.1;
+                font-size: 15px;
+            }
+
+            .packages ul .dflex{
+                padding: 0px 5px;
+            }
+
+            .packages ul li .li_p{
+                font-size: 13.8px;
+            }
+
+            .packages ul  .icons i{
+            padding: 3px 5px;
+            border-radius: 50%;
+            font-size: 14px;
+            }
+
+            .packages ul  .icons .fa-check{
+                padding: 2px 4px;
+            }
+
+            .packages ul  .brrr{
+                padding: 0;
+            }
+
+            .packages .tit{
+                padding: 10px 2px;
+                background: 
+                linear-gradient(35deg, #fff 16%,  #0c58dbc8 , #0a3d88de 90%,  #0c59db 77%, #fff 10%); 
+                color: #fff;
+                
+            }
+            
+            .packages .tit h5{
+                font-size: 18px;
+                display: block;
+                position: relative;
+                top: 0px;
+            }
+
+            .packages ul .btnBox{
+                display: flex;
+                justify-content: center;
+            }
+
+            .packages ul li .startBtn{
+                height: 50px;
+                line-height: 5%;
+            }
+
+            .seo_service .card{ width: 50% ; }
+
+            .seo_service .seo_serv1{
+                width: 100%; 
+                padding-right: 0;
+            }
+
+            .seo_service .seo_serv2,
+            .seo_service img{display: none;}
+        }
+
+
+.googleAds .item{
+padding:40px 0px 40px 30px;
+background-color:#0c58dbc8;
+border-radius: 5px;
+}
+.googleAds .dflex{
+display: flex;
+gap:25px;
+}
+
+.googleAds h4{
+margin-bottom: 20px;
+line-height: 1;
+font-weight: 400;
+}
+
+.googleAds p,
+.googleAdsManage li p{
+font-size: 15px;
+line-height: 1.5;
+}
+
+.googleAds h4,
+.googleAds p{ color: #fff; }
+
+.googleAds i{
+display: block;
+font-size: 31px;
+color: #fda708;
+line-height: 1.7;
+}
+
+.googleAdsManage .ctrNo{
+font-size: 15px;
+padding: 10px 0;
+}
+
+
+      @media (max-width:1200px){
+        .googleAds .item{
+            padding:20px; 
+            margin-bottom: 10px;
+        }
+
+        .googleAds h4{
+            line-height: 1;
+            font-size: 18px;
+        }
+
+        .googleAds i{font-size: 23px;}
+      }
+      .section-gap {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+      
+      .section-gap-top {
+        padding-top: 60px;
+      }
