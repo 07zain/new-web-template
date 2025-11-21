@@ -1,7 +1,7 @@
 import React from 'react';
 import ServiceCard from '../ourservicecard';
 import { Row,Col } from 'react-bootstrap';
-import './Ourservice.css'
+import './ourservice.css'
 const Ourservices = () => {
   return (
     <div className="pageSec">
